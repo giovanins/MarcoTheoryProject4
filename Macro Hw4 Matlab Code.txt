@@ -1,0 +1,49 @@
+var c w y r i l k;
+varexo z;
+
+parameters alpha beta delta psi rho epsilon;
+alpha = 0.33;
+beta = 0.99;
+delta = 0.025;
+psi = 1.75;
+rho = 0.95;
+epsilon = 10;
+
+model;
+1/c = beta * (1/c(+1)) * (1 + r(+1) - delta);
+psi * c / (1 - l) = w;
+c + i = y;
+y = (k(-1)^alpha) * ((exp(z) * l)^(1 - alpha));
+w = y * ((epsilon - 1)/epsilon) * ((1 - alpha)/l);
+r = y * ((epsilon - 1)/epsilon) * (alpha / k(-1));
+i = k - (1 - delta) * k(-1);
+end;
+
+steady;
+
+check;
+
+shocks;
+var z;
+periods 1:5;
+values 0.1;
+end;
+
+perfect_foresight_setup(periods=100);
+perfect_foresight_solver;
+
+
+var_list = M_.endo_names;  % list of variable names
+nvars = size(var_list, 1);  % number of variables
+
+figure;
+for i = 1:nvars
+    subplot(ceil(nvars/2), 2, i);  % adjust subplot layout
+    plot(oo_.endo_simul(i, :), 'LineWidth', 1.5);
+    title(var_list(i, :), 'Interpreter', 'none');
+    xlabel('Time Period');
+    ylabel('Value');
+    grid on;
+end
+
+sgtitle('Deterministic Simulation Results');
