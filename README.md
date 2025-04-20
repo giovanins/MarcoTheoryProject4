@@ -40,7 +40,7 @@ For this part use the Marcro_4_rates.R file to run data.
 
 #### Finding Transition Rates
 
-For this part use the Marcro_4_transitions.R file to run data. Additionally, you need to have [the follwing dataset (https://mailuc-my.sharepoint.com/:u:/g/personal/olleysd_mail_uc_edu/EZlL-NHFCYhBlKAf3S1QbkQBqW_B0G3qehaR_d837olxyQ])] in your folder as well.
+For this part use the Marcro_4_transitions.R file to run data. Additionally, you need to have the follwing dataset: (https://mailuc-my.sharepoint.com/:u:/g/personal/olleysd_mail_uc_edu/EZlL-NHFCYhBlKAf3S1QbkQBqW_B0G3qehaR_d837olxyQ) in your folder as well.
 
 1. Define data set using cps_00001.xml file.
 2. Redefine the labor status in the new data set.
