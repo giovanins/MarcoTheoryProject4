@@ -43,7 +43,7 @@ For this part use the Marcro_4_rates.R file to run data.
 For this part use the Marcro_4_transitions.R file to run data. Additionally, you need to have the follwing dataset: (https://mailuc-my.sharepoint.com/:u:/g/personal/olleysd_mail_uc_edu/EZlL-NHFCYhBlKAf3S1QbkQBqW_B0G3qehaR_d837olxyQ) in your folder as well.
 
 1. Define data set using cps_00001.xml file.
-2. Redefine the labor status in the new data set.
+2. Define the labor status in the new data set.
 3. Make the panel data set by coverting data.table, creating lags of previous status, filtering and couuting the transitions, and calulculating transition rates.
 4. Create large plot with all transition rates.
 5. Create individual plots for each transition rate.
